@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-1</title>
+    <script>
+        /*
+        -------------------------------------
+        var y = 5;
+        function abc() {
+            var x = 10;
+            document.write(x);
+        }
+        abc()
+        document.writeln(x); //x is local so here not execute and also not give error
+        console.log(x); //Uncaught ReferenceError: x is not defined error 
+        console.log(y);
+        -------------------------------------*/
+        /*var a = 10;
+        function f1() {
+            var b = 20;
+            console.log(a,b);
+        }
+        f1()
+        console.log(a);
+        console.log(b); // b is not defined error 
+        // ------------------------------------------
+        var a = 10;
+        var a = 5;
+        a = 50;
+        console.log(a); //Output:- 50
+        // -------------------------------------------
+        // Initialization after access
+        console.log(a);
+        var a = 10; //undefined error
+        ----------------------------------------------
+        let a = 10;
+        function f() {
+            let b = 9;
+            console.log(a);
+            console.log(b);
+        }
+        f();
+        console.log(a);
+        // console.log(b); //b is not defined error
+        ----------------------------------------------
+        function ab() {
+            var b=5;
+            if (b>4) {
+                let a = 1 // Declare with let inside an if block
+                // let is only access in if block
+                console.log(a);
+            }
+            console.log(a);
+        }
+        ab();
+        ---------------------------------------------
+        let a = 5;
+        let a = 10;
+        a = 50;
+        console.log(a);
+        a is already be declare  error
+        ------------------------------------------------------
+        redeclare in different scope is possivle :------
+        let a = 15;
+        function f1() {
+            let a = 9;
+            console.log(a);
+        }
+        f1()
+        console.log(a)
+        output:- 9
+                15
+        // ------------------------------------------------------------
+        console.log(a);
+        let a = 5; error can't access a before initialization 
+        ---------------------------------------
+        // Const
+        const a = 5;
+        const a = 10;
+        a = 50;
+        console.log(a)
+        No updation is accepted 
+        gives error
+        --------------------------------------------------------------*/
+        const a = 10;
+        function f() {
+            // a = 9;
+            const a = 9;
+            console.log(a);
+        }
+        f();
+        console.log(a);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!-- Notes
+ - console.log gives output in browsers console and not give error in browser 
+ - document.write is not giving error
+ - console.log gives error if anything is problamatic
+ inside head :-
+ <script language="javascript" type="text/javascript">
+        document.write("Hello World");
+        console.log("hii");
+    </script>
+    ----------------------
+Variables :--
+    - Local/Global Scoped
+        1. Implicit (AUTO)
+        2. Var:
+            - Oldest Keyword.
+            - use anywhere( Global/local scope)
+            - To declare variable in JS
+            - Declare inside but access outside
+            - Redeclare with same name or in same scope
+            - Initialization after access
+        3. Let:
+            - Updated version(ES6)
+            - Blocked Scope 
+            - Declare variable using let
+            - redeclare in same scope not possible 
+            - redeclare in different scope is possible 
+        4. Const:
+            - Updated version
+            - block scoped 
+            - constant variable throughout code 
+            - Redeclare in same scope
+            - reassignment in different scope
+            
+
+ -->
