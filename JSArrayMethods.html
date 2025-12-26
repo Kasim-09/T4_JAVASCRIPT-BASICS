@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-4</title>
+    <script>
+        // 1. push() -  adds new items to the end of an array, and returns the new length.
+        let f1 = ["apple", "banana"];
+        f1.push("orange");
+        console.log(f1); // ["apple", "banana", "orange"]
+        // 2. pop() - removes the last element from an array and returns that element.
+        let n1 = [10,20,30];
+        let r1 = n1.pop();
+        console.log(n1); // [10,20]
+        console.log(r1); // 30
+        // 3. map() - creates a new array populated with the results of calling a provided function on every element in the calling array.
+        let numbers = [1, 2, 3, 4];
+        let s1 = numbers.map(n=>n*n)
+        console.log(s1); // [1,4,9,16]
+        // 4. filter() - creates a new array with all elements that pass the test implemented by the provided function.
+        let age = [12,18,25,14];
+        let a1 = age.filter(a2=>a2>=18);
+        console.log(a1); // [18,25]
+        // 5. ForEach() - executes a provided function once for each array element.(Specifically in UXUI development)
+        let name = ["a", "b", "c"];
+        name.forEach(n1=>{console.log("welcome"+n1)});
+        // 6. includes() - determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+        let c1 = ["red", "green"];
+        console.log(c1.includes("red")); // true
+        console.log(c1.includes("blue")); // false
+        // 7. find() - returns the value of the first element in the provided array that satisfies the provided testing function.
+        let u1 = [{id:1, name:"a"}, {id:2, name:"b"}, {id:3, name:"c"}];
+        let u2 = u1.find(u=>u.id===2);
+        console.log(u2); // {id:2, name:"b"}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- Array Methods in JavaScript
+ 1. push()
+ 2. pop()
+3. map()
+4. filter()
+5. ForEach()
+6. includes()
+7. find()
+
+-->
