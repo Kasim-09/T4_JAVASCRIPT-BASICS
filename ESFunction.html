@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-7</title>
+    <script>
+    // Case-1:- Fat arrow(ES-6)function with multiple para 
+     const add = (a,b) => a+b
+     console.log(add(3,5))  //O/p:- 8
+
+    //  Case-2: Fat arrow(ES-6)function with one para 
+    const m1 = (x) => x*x
+     console.log(m1(5)) //O/p:- 25
+    //  or 
+    const m11 = x => x*x
+    console.log(m11(5)) //O/p:- 25
+    //  Case-3: Fat arrow(ES-6)function with no para 
+    const h1=()=> "hello"
+    console.log(h1()) //O/p:- Hello
+    //  Case-4: block body
+    const m2 =(a,b)=>{
+        const result = a*b
+        return result 
+    }
+    console.log(m1(5,2))
+    // ---------------------------------------------------------------------------------------------------
+    // Ex-1
+    const newfun=(p)=>
+    `val ${p}`
+    console.log(newfun(30)) //30
+    // Ex-2
+    const fun1 = (val) =>
+    "hello" + val
+    console.log(fun1('World'))
+    // backtill
+    var b = "Lii"
+    document.write(`${b}`)
+// -------------------Understading concept------------------------------------------------------------
+    // case-1 (with{})
+    const add1 = (j,k)=>{
+        ans = `${j+k}`
+    }
+    console.log("ans= "+add1(8,9))
+    // case-2 (without{})
+    const add2 = (j,k)=>
+        ans = `${j+k}`
+        console.log("ans= "+add2(8,9))
+    // case-3 (with{}+return)
+    const add3 = (j,k)=>{
+        return ans = `${j+k}`
+    }
+    console.log("ans= "+add3(8,9))
+// --------------------------------------------------------------------------------------------------
+    
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
+<!-- syntax
+ function name = (para1, para2, para3....paraN)=>Expression        (=> denotes fatarrow)
+ -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-6</title>
+    <script>
+        /* Case-1:- implicit function
+        function fun() {
+            document.write("Hello User")
+        }
+        // Case-2:- Explicit Function
+        function add(a,b) {
+            return a+b //compulsory return
+        }
+        let result = add(5,10)
+        document.write(result)
+        // Case-3:- Automatically executed function(self invoking)
+        (function() {
+            document.write("Self invoked");
+        })();
+        // Case-4:- Passing Parameters (using function)
+        function fun(first,last) {
+            document.write("Hello"+" "+first+" "+last);
+        }   
+        // Case-5:- Assigning a function to a variable 
+        var a = function f1(x,y) {
+            return x + y
+        }
+        let result1 = a(50,10)
+        document.write(result1)
+        */
+    //    case 6:- One function calling another function
+    function info(first,last) {
+        var full = first+last
+        return full
+    }
+    function hello() {
+        var result = info('abc','xyz')
+        document.write(result)
+    }
+
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick="fun()">Click</button><br>
+    <button type="button" onclick="fun('abc','xyz')">Click me </button><br><br>
+    <button type="button" onclick="hello()">Click me </button>
+</body>
+</html>
+<!-- Function in JS
+ Syntax: Implicit function
+    function functionname(paramerter-1,paramerter-1.....) {
+                    code
+            } 
+    
+     -->
+    

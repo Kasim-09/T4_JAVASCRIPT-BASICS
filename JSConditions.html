@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <script>
         // 1. if condition
         let a1 = true;
-        if(a1){
+        if (a1) {
             document.write("Condition is true<br>");
         }
 
         // 2. if ... else condition
         let age2 = 16;
-        if(age2 >= 18){
+        if (age2 >= 18) {
             document.write("You are eligible to vote<br>");
         } else {
             document.write("You are not eligible to vote<br>");
@@ -21,9 +22,9 @@
 
         // 3. else if condition
         let marks = 85;
-        if(marks >= 90){
+        if (marks >= 90) {
             document.write("Grade A<br>");
-        } else if(marks >= 75){
+        } else if (marks >= 75) {
             document.write("Grade B<br>");
         } else {
             document.write("Grade C<br>");
@@ -31,7 +32,7 @@
 
         // 4. switch condition
         let r1 = "admin";
-        switch(r1) {
+        switch (r1) {
             case "admin":
                 console.log("Full access");
                 break;
@@ -40,21 +41,21 @@
                 break;
             case "viewer":
                 console.log("View access");
-                break; 
+                break;
             default:
                 console.log("No access");
         }
         // 5. ternary operator(?:)
         let age3 = 20;
-        let r11 = age3>=18? "adult":"minor";
+        let r11 = age3 >= 18 ? "adult" : "minor";
         console.log(r11); // adult
         // 1. for loop
-        for (let i=1; i<=5; i++){
+        for (let i = 1; i <= 5; i++) {
             console.log("Iteration number: " + i);
         }
         // 2. while loop
-        let i=1;
-        while(i<=5){
+        let i = 1;
+        while (i <= 5) {
             console.log("While loop iteration: " + i);
             i++;
         }
@@ -70,7 +71,7 @@
             console.log(f2);
         }
         // 5. for in loop with object
-        let person = {firstName:"John", lastName:"Doe",age:25};
+        let person = { firstName: "John", lastName: "Doe", age: 25 };
         for (let key in person) {
             console.log(key + ": " + person[key]);
         }
@@ -85,11 +86,13 @@
             console.log(fruits[i]);
         }
     </script>
-    
+
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 <!-- Conditions and loops in JavaScript
  1. Conditions
